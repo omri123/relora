@@ -1,4 +1,5 @@
 TODO: pay attention to add safe_tensors=False when warming up
+TODO: dataset is in s3://lora/data/tar
 
 # ReLoRA -- PEFT Pretraining
 > Official code for Stack More Layers Differently: High-Rank Training Through Low-Rank Updates https://arxiv.org/abs/2307.05695
