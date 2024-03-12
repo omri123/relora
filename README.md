@@ -1,3 +1,5 @@
+TODO: pay attention to add safe_tensors=False when warming up
+
 # ReLoRA -- PEFT Pretraining
 > Official code for Stack More Layers Differently: High-Rank Training Through Low-Rank Updates https://arxiv.org/abs/2307.05695
 <img width="813" alt="ReLoRA" src="https://github.com/Guitaricet/peft_pretraining/assets/2821124/41415bd0-b39f-4f2c-9bbd-5fd6555e87a7">
@@ -104,7 +106,7 @@ In principle, such an approach can be more flexible than LoRA, but you need to b
 3. How frequently you reset
 
 Reset frequency is determined by `--relora` parameter (in the number of update steps, not global steps).
-Optimizer reset options are: 
+Optimizer reset options are:
 ```
 "--reset_optimizer_on_relora", default=True, type=lambda x: x.lower() == "true"
 "--optimizer_random_pruning", default=False, type=float
